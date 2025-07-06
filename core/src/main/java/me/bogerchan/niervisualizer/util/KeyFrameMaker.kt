@@ -1,5 +1,6 @@
 package me.bogerchan.niervisualizer.util
 
+import android.util.Log
 import android.view.animation.DecelerateInterpolator
 
 /**
@@ -35,6 +36,8 @@ class KeyFrameMaker {
 //          System.arraycopy(waveData, 0, computedWaveData, 0, computedWaveData.size)
 //          System.arraycopy(waveData, 0, mPrevWaveData, 0, mPrevWaveData.size)
             mWaveAnimator.reset()
+        }else{
+            Log.e("glight2000", "mDestWaveData not initialized!")
         }
     }
 
